@@ -1,4 +1,4 @@
-# Miclaw 舆情分析工作流
+# Miclaw 用户体验case分析工作流
 
 基于 Claude Code + Gemini 的 miclaw（小米龙虾AI助手）舆情分析流水线，自动提取用户笔记中的任务执行场景（Sheet1）和主观评价（Sheet2），并输出至飞书表格。
 
