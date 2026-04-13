@@ -28,6 +28,28 @@ pip install openai openpyxl python-dotenv requests
 MICLAW_GEMINI_API_KEY=your_api_key_here
 ```
 
+## Claude Code 技能安装
+
+技能文件位于 `.claude/commands/miclaw-analyze.md`，支持两种安装方式：
+
+**方式一：项目级（默认）**
+
+将本仓库文件夹作为 Claude Code 工作目录打开，即可使用 `/miclaw-analyze`。仅在该目录下有效。
+
+**方式二：用户级（推荐，任意目录可用）**
+
+将技能文件复制到用户级命令目录，之后无论在哪个项目下都能调用：
+
+```bash
+# Windows
+copy ".claude\commands\miclaw-analyze.md" "%USERPROFILE%\.claude\commands\miclaw-analyze.md"
+
+# macOS / Linux
+cp .claude/commands/miclaw-analyze.md ~/.claude/commands/miclaw-analyze.md
+```
+
+复制后重启 Claude Code，在任意工作目录输入 `/miclaw-analyze` 即可启动分析向导。
+
 ## 使用方式
 
 ### 方式一：Claude Code 技能（推荐）
